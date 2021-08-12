@@ -1,5 +1,5 @@
 {
-  "name": "countr-premium-access",
+  "name": "countr-access-manager",
   "main": "src/bot.js",
   "license": "",
   "dependencies": {
