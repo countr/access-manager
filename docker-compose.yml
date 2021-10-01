@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  blurple-counter:
+    build: .
+    ports:
+      - "5000:5000"
