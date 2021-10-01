@@ -1,6 +1,11 @@
 {
   "name": "countr-access-manager",
   "main": "src/bot.js",
+  "scripts": {
+    "start": "node .",
+    "start:docker": "docker compose build && docker compose up",
+    "lint": "eslint --ext \".js\" ./"
+  },
   "license": "UNLICENSE",
   "dependencies": {
     "bufferutil": "^4.0.4",
