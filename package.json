@@ -1,7 +1,7 @@
 {
   "name": "countr-access-manager",
   "main": "src/bot.js",
-  "license": "",
+  "license": "UNLICENSE",
   "dependencies": {
     "bufferutil": "^4.0.4",
     "discord.js": "^13.1.0",
