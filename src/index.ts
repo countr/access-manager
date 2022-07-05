@@ -1,4 +1,4 @@
-import { Client, IntentsBitField, MessageType, Options, Partials } from "discord.js";
+import { Client, IntentsBitField, Options, Partials } from "discord.js";
 import accessHandler from "./handlers/access";
 import config from "./config";
 import { connection } from "./database";
@@ -34,29 +34,8 @@ client.once("ready", async trueClient => {
 
   await client.guilds.fetch(config.guild);
 
-  void accessHandler(trueClient);
+  accessHandler(trueClient);
   void interactionsHandler(trueClient);
-});
-
-client.on("messageCreate", async message => {
-  if (
-    !message.inGuild() ||
-    message.author.bot ||
-    message.type !== MessageType.Default
-  ) return;
-
-  if (RegExp(`^<@!?${client.user!.id}>`, "u").exec(message.content)) return mentionCommandHandler(message);
-});
-
-client.on("messageUpdate", async (_, potentialPartialMessage) => {
-  if (!potentialPartialMessage.guildId) return;
-
-  if (potentialPartialMessage.content && RegExp(`^<@!?${client.user!.id}>`, "u").exec(potentialPartialMessage.content)) {
-    const message = potentialPartialMessage.partial ? await potentialPartialMessage.fetch() : potentialPartialMessage;
-    if (message.inGuild()) return mentionCommandHandler(message);
-  }
-
-  return void 0;
 });
 
 // discord debug logging

@@ -14,12 +14,11 @@ export type ChatInputCommand = {
   description: string;
   options?: [ApplicationCommandAllowedOptions, ...ApplicationCommandAllowedOptions[]];
 } & (
-  | {
-    permissionLevel: Omit<PermissionLevel, "None">;
+  {
+    permissionLevel: Omit<PermissionLevel, PermissionLevel.None>;
     execute(interaction: ChatInputCommandInteraction<"cached">, document: AccessDocument, tokens: number): Awaitable<void>;
-  }
-  | {
-    permissionLevel: PermissionLevel.None;
+  } | {
+    permissionLevel?: never;
     execute(interaction: ChatInputCommandInteraction<"cached">, document: null, tokens: number): Awaitable<void>;
   }
 );

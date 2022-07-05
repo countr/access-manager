@@ -8,7 +8,7 @@ import contextMenuCommandHandler from "./contextMenuCommands";
 import { join } from "path";
 import { readdir } from "fs/promises";
 
-export default async function handleInteractions(client: Client<true>): Promise<void> {
+export default async function interactionsHandler(client: Client<true>): Promise<void> {
   await client.guilds.cache.get(config.guild)!.commands.set([
     ...await nestCommands("../../commands/chatInput", "CHAT_INPUT"),
     ...await nestCommands("../../commands/menu", "MENU"),

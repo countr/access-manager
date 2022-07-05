@@ -10,5 +10,5 @@ interface UserMenuCommand {
 }
 
 export type ContextMenuCommand = UserMenuCommand & {
-  permissionLevel: PermissionLevel;
+  permissionLevel?: Omit<PermissionLevel, PermissionLevel.None>;
 };
