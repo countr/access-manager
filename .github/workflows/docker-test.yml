@@ -1,0 +1,21 @@
+name: Docker Compose
+on:
+  push:
+    branches:
+    - djs-14
+  pull_request:
+    branches:
+    - djs-14
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Test Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Test docker compose build
+      run: docker compose build
