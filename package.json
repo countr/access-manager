@@ -1,0 +1,41 @@
+{
+  "name": "countr-access-manager",
+  "main": "build",
+  "license": "UNLICENSE",
+  "scripts": {
+    "build": "tsc",
+    "docker": "npm run docker:build && npm run docker:up",
+    "docker:build": "docker-compose build",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:start": "npm run docker:up",
+    "docker:stop": "npm run docker:down",
+    "docker:up": "docker-compose up -d",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix",
+    "start": "node .",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@typegoose/typegoose": "^9.10.1",
+    "bufferutil": "^4.0.6",
+    "discord.js": "^14.0.0-dev.1656936300-f6db285",
+    "dotenv": "^16.0.1",
+    "erlpack": "github:discord/erlpack",
+    "mongoose": "^6.4.2",
+    "utf-8-validate": "^5.0.9",
+    "winston": "^3.8.1",
+    "winston-daily-rotate-file": "^4.7.1",
+    "zlib-sync": "^0.1.7"
+  },
+  "devDependencies": {
+    "@tsconfig/node16-strictest": "^1.0.3",
+    "@types/node": "^16.11.43",
+    "eslint": "^8.19.0",
+    "eslint-config-promise": "github:promise/eslint-config",
+    "typescript": "^4.6.4"
+  },
+  "eslintConfig": {
+    "extends": "promise"
+  }
+}
