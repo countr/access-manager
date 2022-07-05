@@ -1,5 +1,5 @@
 import { createFileTransports, globalFormat } from ".";
-import { createLogger, transports } from "winston";
+import { createLogger } from "winston";
 
 export const databaseLogger = createLogger({
   format: globalFormat,
