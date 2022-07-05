@@ -3,7 +3,6 @@ import { Access } from "../../database/models/Access";
 import type { ChatInputCommand } from "../../commands/chatInput";
 import type { ChatInputCommandInteraction } from "discord.js";
 import config from "../../config";
-import { getTokens } from "../../constants/tokens";
 import { inspect } from "util";
 import { mainLogger } from "../../utils/logger/main";
 
@@ -21,7 +20,7 @@ export default async function chatInputCommandHandler(interaction: ChatInputComm
     const document = await Access.findOne({ userId: interaction.user.id }) ?? new Access({ userId: interaction.user.id });
     if (permissionLevel >= PermissionLevel.Premium) document.expires = new Date(Date.now() + config.access.expireGrace);
 
-    return await command.execute(interaction, document as never, getTokens(interaction.member));
+    return await command.execute(interaction);
   } catch (err) {
     mainLogger.error(`Failed to run command ${interaction.commandName}: ${inspect(err)}`);
   }

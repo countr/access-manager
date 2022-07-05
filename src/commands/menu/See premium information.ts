@@ -1,13 +1,16 @@
 import { ApplicationCommandType } from "discord.js";
 import type { ContextMenuCommand } from ".";
-import { PermissionLevel } from "../../constants/permissions";
 import config from "../../config";
+import { getAccess } from "../../database";
+import { getTokens } from "../../constants/tokens";
 
 const command: ContextMenuCommand = {
   type: ApplicationCommandType.User,
-  permissionLevel: PermissionLevel.None,
-  execute(interaction, target, document, tokens, confidentialAccess) {
-    if (!document) return void interaction.reply({ content: "❌ This user does not have access to Countr Premium.", ephemeral: true });
+  async execute(interaction, target, confidentialAccess) {
+    const access = await getAccess(target.id);
+    if (!access) return void interaction.reply({ content: "❌ This user does not have access to Countr Premium.", ephemeral: true });
+
+    const tokens = getTokens(target);
 
     return void interaction.reply({
       embeds: [
@@ -19,8 +22,8 @@ const command: ContextMenuCommand = {
           },
           color: config.color,
           fields: [
-            { name: "Servers", value: `**${document.guildIds.length}/${tokens} servers with Premium:** ${confidentialAccess ? `\n${document.guildIds.map(guildId => `• \`${guildId}\``).join("\n")}` : "*(confidential)*"}`, inline: true },
-            { name: "Scheduled expiration", value: tokens ? "*Not scheduled (user still has access)*" : `<t:${Math.floor(document.expires.getTime() / 1000)}:R>`, inline: true },
+            { name: "Servers", value: `**${access.guildIds.length}/${tokens} servers with Premium:** ${confidentialAccess ? `\n${access.guildIds.map(guildId => `• \`${guildId}\``).join("\n")}` : "*(confidential)*"}`, inline: true },
+            { name: "Scheduled expiration", value: tokens ? "*Not scheduled (user still has access)*" : `<t:${Math.floor(access.expires.getTime() / 1000)}:R>`, inline: true },
           ],
         },
       ],

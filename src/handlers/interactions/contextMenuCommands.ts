@@ -1,10 +1,8 @@
 import { PermissionLevel, getPermissionLevel } from "../../constants/permissions";
-import { Access } from "../../database/models/Access";
 import { ApplicationCommandType } from "discord.js";
 import type { ContextMenuCommand } from "../../commands/menu";
 import type { ContextMenuCommandInteraction } from "discord.js";
 import config from "../../config";
-import { getTokens } from "../../constants/tokens";
 
 export default async function contextMenuCommandHandler(interaction: ContextMenuCommandInteraction<"cached">): Promise<void> {
   const commands = config.guild ? interaction.client.guilds.cache.get(config.guild)?.commands : interaction.client.application?.commands;
@@ -21,7 +19,6 @@ export default async function contextMenuCommandHandler(interaction: ContextMenu
     const target = await interaction.guild.members.fetch(interaction.targetId).catch(() => null);
     if (!target) return;
 
-    const document = await Access.findOne({ userId: target.id });
-    return command.execute(interaction, target, document, getTokens(target), interaction.user.id === target.id || permissionLevel >= PermissionLevel.Owner);
+    return command.execute(interaction, target, interaction.user.id === target.id || permissionLevel >= PermissionLevel.Owner);
   }
 }

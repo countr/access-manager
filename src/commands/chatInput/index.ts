@@ -1,5 +1,4 @@
 import type { ApplicationCommandAutocompleteOption, ApplicationCommandChannelOptionData, ApplicationCommandChoicesData, ApplicationCommandNonOptionsData, ApplicationCommandNumericOptionData, Awaitable, ChatInputCommandInteraction } from "discord.js";
-import type { AccessDocument } from "../../database/models/Access";
 import type { PermissionLevel } from "../../constants/permissions";
 
 type ApplicationCommandAllowedOptions =
@@ -10,15 +9,9 @@ type ApplicationCommandAllowedOptions =
   | ApplicationCommandNumericOptionData
 ;
 
-export type ChatInputCommand = {
+export interface ChatInputCommand {
   description: string;
   options?: [ApplicationCommandAllowedOptions, ...ApplicationCommandAllowedOptions[]];
-} & (
-  {
-    permissionLevel: Omit<PermissionLevel, PermissionLevel.None>;
-    execute(interaction: ChatInputCommandInteraction<"cached">, document: AccessDocument, tokens: number): Awaitable<void>;
-  } | {
-    permissionLevel?: never;
-    execute(interaction: ChatInputCommandInteraction<"cached">, document: null, tokens: number): Awaitable<void>;
-  }
-);
+  permissionLevel?: Exclude<PermissionLevel, PermissionLevel.None>;
+  execute(interaction: ChatInputCommandInteraction<"cached">): Awaitable<void>;
+}

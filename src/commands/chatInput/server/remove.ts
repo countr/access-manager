@@ -1,6 +1,7 @@
 import { ApplicationCommandOptionType } from "discord.js";
 import type { ChatInputCommand } from "..";
 import { PermissionLevel } from "../../../constants/permissions";
+import { getAccess } from "../../../database";
 
 const command: ChatInputCommand = {
   description: "Remove Premium access from a server",
@@ -13,13 +14,14 @@ const command: ChatInputCommand = {
     },
   ],
   permissionLevel: PermissionLevel.Premium,
-  execute(interaction, document) {
+  async execute(interaction) {
     const serverId = interaction.options.getString("server_id", true);
 
-    if (!document.guildIds.includes(serverId)) return void interaction.reply({ content: "❌ This server does not already have access.", ephemeral: true });
+    const access = await getAccess(interaction.user.id);
+    if (!access || !access.guildIds.includes(serverId)) return void interaction.reply({ content: "❌ This server does not already have access.", ephemeral: true });
 
-    document.guildIds = document.guildIds.filter(guildId => guildId !== serverId);
-    void document.save();
+    access.guildIds = access.guildIds.filter(guildId => guildId !== serverId);
+    void access.save();
 
     return void interaction.reply({ content: `✅ Removed server with ID \`${serverId}\` from your list of servers with access.`, ephemeral: true });
   },
