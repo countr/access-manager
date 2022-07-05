@@ -19,6 +19,6 @@ export default async function contextMenuCommandHandler(interaction: ContextMenu
     const target = await interaction.guild.members.fetch(interaction.targetId).catch(() => null);
     if (!target) return;
 
-    return command.execute(interaction, target, interaction.user.id === target.id || permissionLevel >= PermissionLevel.Owner);
+    return command.execute(interaction, target, interaction.user.id === target.id || permissionLevel >= PermissionLevel.Admin);
   }
 }
