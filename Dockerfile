@@ -1,6 +1,6 @@
 # compile typescript to normal javascript
 
-FROM node:16-alpine AS builder
+FROM node:18-alpine AS builder
 RUN apk add g++ gcc make python3
 
 WORKDIR /app
@@ -15,7 +15,7 @@ RUN npm run build
 
 # production image
 
-FROM node:16-alpine AS final
+FROM node:18-alpine AS final
 RUN apk add dumb-init g++ gcc make python3
 
 WORKDIR /app
