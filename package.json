@@ -19,7 +19,7 @@
   "dependencies": {
     "@typegoose/typegoose": "9.10.1",
     "bufferutil": "4.0.6",
-    "discord.js": "14.0.0-dev.1656936300-f6db285",
+    "discord.js": "14.0.3",
     "dotenv": "16.0.1",
     "erlpack": "github:discord/erlpack",
     "mongoose": "6.4.7",
