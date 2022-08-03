@@ -6,3 +6,4 @@ services:
     restart: unless-stopped
     volumes:
       - ./logs:/app/logs
+    network_mode: host
