@@ -32,11 +32,6 @@ export default {
 
   roles,
 
-  api: {
-    port: parseInt(process.env["API_PORT"] ?? "", 10) || null,
-    numberOfProxies: parseInt(process.env["API_NUMBER_OF_PROXIES"] ?? "", 10) || 0,
-  },
-
   owner: process.env["OWNER"] ?? "",
   admins: (process.env["ADMINS"] ?? "").split(","),
   guild: String(process.env["GUILD"]),
