@@ -23,7 +23,7 @@
     "dotenv": "16.0.3",
     "erlpack": "github:discord/erlpack",
     "mongoose": "6.5.5",
-    "utf-8-validate": "5.0.9",
+    "utf-8-validate": "5.0.10",
     "winston": "3.8.2",
     "winston-daily-rotate-file": "4.7.1",
     "zlib-sync": "0.1.7"
