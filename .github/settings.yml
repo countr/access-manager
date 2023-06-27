@@ -1,0 +1,17 @@
+_extends: biaw/.github
+
+repository:
+  name: access-manager
+  description: "An access manager for Countr Premium"
+  private: false
+  topics: "discord, discord-bot, hacktoberfest"
+
+branches:
+  - name: main
+    protection:
+      required_status_checks:
+        checks:
+          - context: CodeQL
+          - context: ESLint
+          - context: DeepScan
+          - context: Test Build
