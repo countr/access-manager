@@ -1,7 +1,7 @@
-import { Access } from "../database/models/Access";
 import type { Client } from "discord.js";
 import config from "../config";
-import { getTokens } from "../constants/tokens";
+import getTokens from "../constants/tokens";
+import { Access } from "../database/models/Access";
 
 export default function accessHandler(client: Client<true>): void {
   const guild = client.guilds.cache.get(config.guild)!;

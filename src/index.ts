@@ -4,8 +4,8 @@ import config from "./config";
 import { connection } from "./database";
 import accessHandler from "./handlers/access";
 import interactionsHandler from "./handlers/interactions";
-import { discordLogger } from "./utils/logger/discord";
-import { mainLogger } from "./utils/logger/main";
+import discordLogger from "./utils/logger/discord";
+import mainLogger from "./utils/logger/main";
 
 const client = new Client({
   intents: [

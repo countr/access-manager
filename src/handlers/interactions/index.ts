@@ -1,12 +1,12 @@
+import { readdir } from "fs/promises";
+import { join } from "path";
 import type { ApplicationCommandData, ApplicationCommandSubCommandData, ApplicationCommandSubGroupData, Client } from "discord.js";
 import { ApplicationCommandOptionType, ApplicationCommandType, InteractionType } from "discord.js";
 import type { ChatInputCommand } from "../../commands/chatInput";
 import type { ContextMenuCommand } from "../../commands/menu";
-import chatInputCommandHandler from "./chatInputCommands";
 import config from "../../config";
+import chatInputCommandHandler from "./chatInputCommands";
 import contextMenuCommandHandler from "./contextMenuCommands";
-import { join } from "path";
-import { readdir } from "fs/promises";
 
 export default async function interactionsHandler(client: Client<true>): Promise<void> {
   await client.guilds.cache.get(config.guild)!.commands.set([

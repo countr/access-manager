@@ -1,7 +1,9 @@
-import { createFileTransports, globalFormat } from ".";
 import { createLogger } from "winston";
+import { createFileTransports, globalFormat } from ".";
 
-export const databaseLogger = createLogger({
+const databaseLogger = createLogger({
   format: globalFormat,
   transports: [...createFileTransports("database", ["debug"])],
 });
+
+export default databaseLogger;

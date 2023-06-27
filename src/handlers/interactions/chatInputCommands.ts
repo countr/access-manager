@@ -1,10 +1,10 @@
+import { inspect } from "util";
+import type { ChatInputCommandInteraction } from "discord.js";
+import type { ChatInputCommand } from "../../commands/chatInput";
+import config from "../../config";
 import { PermissionLevel, getPermissionLevel } from "../../constants/permissions";
 import { Access } from "../../database/models/Access";
-import type { ChatInputCommand } from "../../commands/chatInput";
-import type { ChatInputCommandInteraction } from "discord.js";
-import config from "../../config";
-import { inspect } from "util";
-import { mainLogger } from "../../utils/logger/main";
+import mainLogger from "../../utils/logger/main";
 
 export default async function chatInputCommandHandler(interaction: ChatInputCommandInteraction<"cached">): Promise<void> {
   try {

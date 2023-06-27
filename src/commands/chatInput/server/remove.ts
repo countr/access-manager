@@ -18,7 +18,7 @@ const command: ChatInputCommand = {
     const serverId = interaction.options.getString("server_id", true);
 
     const access = await getAccess(interaction.user.id);
-    if (!access || !access.guildIds.includes(serverId)) return void interaction.reply({ content: "❌ This server does not already have access.", ephemeral: true });
+    if (!access?.guildIds.includes(serverId)) return void interaction.reply({ content: "❌ This server does not already have access.", ephemeral: true });
 
     access.guildIds = access.guildIds.filter(guildId => guildId !== serverId);
     void access.save();
