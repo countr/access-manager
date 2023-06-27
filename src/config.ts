@@ -1,5 +1,5 @@
-import "dotenv/config";
 import type { CacheWithLimitsOptions, Snowflake } from "discord.js";
+import "dotenv/config";
 
 const roles: Record<Snowflake, number> = {};
 for (const [key, value] of Object.entries(process.env)) if (key.startsWith("ROLE_") && value) roles[key.slice(5)] = parseInt(value, 10);

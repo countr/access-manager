@@ -1,7 +1,7 @@
-import { Access } from "./models/Access";
-import type { AccessDocument } from "./models/Access";
 import type { Snowflake } from "discord.js";
 import config from "../config";
+import type { AccessDocument } from "./models/Access";
+import { Access } from "./models/Access";
 
 export async function getAccess(userId: Snowflake): Promise<AccessDocument | null> {
   return Access.findOne({ userId });

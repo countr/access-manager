@@ -1,13 +1,8 @@
-import type { ApplicationCommandAutocompleteOption, ApplicationCommandChannelOptionData, ApplicationCommandChoicesData, ApplicationCommandNonOptionsData, ApplicationCommandNumericOptionData, Awaitable, ChatInputCommandInteraction } from "discord.js";
+import type { Awaitable, ChatInputCommandInteraction, ApplicationCommandSubCommand } from "discord.js";
 import type { PermissionLevel } from "../../constants/permissions";
 
-type ApplicationCommandAllowedOptions =
-  | ApplicationCommandAutocompleteOption
-  | ApplicationCommandChannelOptionData
-  | ApplicationCommandChoicesData
-  | ApplicationCommandNonOptionsData
-  | ApplicationCommandNumericOptionData
-;
+
+type ApplicationCommandAllowedOptions = Exclude<ApplicationCommandSubCommand["options"], undefined>[number];
 
 export interface ChatInputCommand {
   description: string;

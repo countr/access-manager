@@ -1,8 +1,8 @@
 import { ApplicationCommandOptionType } from "discord.js";
 import type { ChatInputCommand } from "..";
 import { PermissionLevel } from "../../../constants/permissions";
+import getTokens from "../../../constants/tokens";
 import { getOrCreateAccess } from "../../../database";
-import { getTokens } from "../../../constants/tokens";
 
 const command: ChatInputCommand = {
   description: "Give Premium access to a server so you can add the Premium bot",

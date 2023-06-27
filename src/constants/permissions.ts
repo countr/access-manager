@@ -1,6 +1,6 @@
 import type { GuildMember } from "discord.js";
 import config from "../config";
-import { getTokens } from "./tokens";
+import getTokens from "./tokens";
 
 export enum PermissionLevel {
   None,

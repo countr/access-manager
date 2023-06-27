@@ -1,11 +1,11 @@
-import { PermissionLevel, getPermissionLevel } from "../../constants/permissions";
+import type { ContextMenuCommandInteraction } from "discord.js";
 import { ApplicationCommandType } from "discord.js";
 import type { ContextMenuCommand } from "../../commands/menu";
-import type { ContextMenuCommandInteraction } from "discord.js";
 import config from "../../config";
+import { PermissionLevel, getPermissionLevel } from "../../constants/permissions";
 
 export default async function contextMenuCommandHandler(interaction: ContextMenuCommandInteraction<"cached">): Promise<void> {
-  const commands = config.guild ? interaction.client.guilds.cache.get(config.guild)?.commands : interaction.client.application?.commands;
+  const commands = config.guild ? interaction.client.guilds.cache.get(config.guild)?.commands : interaction.client.application.commands;
   const applicationCommand = commands?.cache.find(({ name }) => name === interaction.commandName);
   if (!applicationCommand) return;
 

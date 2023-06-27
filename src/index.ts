@@ -1,11 +1,11 @@
+import { inspect } from "util";
 import { Client, IntentsBitField, Options, Partials } from "discord.js";
-import accessHandler from "./handlers/access";
 import config from "./config";
 import { connection } from "./database";
-import { discordLogger } from "./utils/logger/discord";
-import { inspect } from "util";
+import accessHandler from "./handlers/access";
 import interactionsHandler from "./handlers/interactions";
-import { mainLogger } from "./utils/logger/main";
+import discordLogger from "./utils/logger/discord";
+import mainLogger from "./utils/logger/main";
 
 const client = new Client({
   intents: [
@@ -24,7 +24,6 @@ const client = new Client({
   ],
   presence: { status: "dnd" },
   rest: { userAgentAppendix: "Countr (countr.xyz)" },
-  ws: { compress: true },
 });
 
 client.once("ready", async trueClient => {
