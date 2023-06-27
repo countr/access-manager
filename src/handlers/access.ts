@@ -8,7 +8,7 @@ export default function accessHandler(client: Client<true>): void {
 
   setInterval(() => void Access.find().then(async documents => {
     for (const document of documents) {
-      if (document.expires.getTime() < Date.now() - config.access.cleanGrace) await document.delete();
+      if (document.expires.getTime() < Date.now() - config.access.cleanGrace) await document.deleteOne();
       else {
         const member = await guild.members.fetch(document.userId).catch(() => null);
         if (member) {
