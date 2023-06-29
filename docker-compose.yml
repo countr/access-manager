@@ -6,4 +6,10 @@ services:
     restart: unless-stopped
     volumes:
       - ./logs:/app/logs
-    network_mode: host
+    networks:
+      - countr-db
+
+networks:
+  countr-db:
+    name: countr-premium-access-manager
+    external: true
