@@ -8,6 +8,8 @@ services:
       - ./logs:/app/logs
     networks:
       - countr-db
+    labels:
+      io.portainer.accesscontrol.teams: "promise-solutions"
 
 networks:
   countr-db:
