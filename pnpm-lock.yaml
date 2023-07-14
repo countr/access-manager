@@ -37,9 +37,12 @@ dependencies:
     version: 0.1.8
 
 devDependencies:
-  '@tsconfig/node16-strictest':
-    specifier: 1.0.4
-    version: 1.0.4
+  '@tsconfig/node18':
+    specifier: 18.2.0
+    version: 18.2.0
+  '@tsconfig/strictest':
+    specifier: 2.0.1
+    version: 2.0.1
   '@types/node':
     specifier: 16.18.38
     version: 16.18.38
@@ -48,7 +51,7 @@ devDependencies:
     version: 8.44.0
   eslint-config-promise:
     specifier: github:promise/eslint-config
-    version: github.com/promise/eslint-config/81b7735691c6296afa0faa8273444b9f4e13b253(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-i@2.27.5-4)(eslint-plugin-jest@27.2.2)(eslint-plugin-react@7.32.2)(eslint@8.44.0)
+    version: github.com/promise/eslint-config/ece4636087e48ada2fc1ef94221556fb891a254a(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-i@2.27.5-4)(eslint-plugin-jest@27.2.3)(eslint-plugin-react@7.32.2)(eslint@8.44.0)
   typescript:
     specifier: 5.1.6
     version: 5.1.6
@@ -235,9 +238,12 @@ packages:
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
     dev: false
 
-  /@tsconfig/node16-strictest@1.0.4:
-    resolution: {integrity: sha512-kp6/DuAoKzHVv5U+p0uOesYbjrEvrYVNdQMl163a+yXXUv9twabvkCGEn3pmVxKXB45JU5MPGolDDWnONZL5ZQ==}
-    deprecated: TypeScript 5.0 supports combining TSConfigs using array syntax in extends
+  /@tsconfig/node18@18.2.0:
+    resolution: {integrity: sha512-yhxwIlFVSVcMym3O31HoMnRXpoenmpIxcj4Yoes2DUpe+xCJnA7ECQP1Vw889V0jTt/2nzvpLQ/UuMYCd3JPIg==}
+    dev: true
+
+  /@tsconfig/strictest@2.0.1:
+    resolution: {integrity: sha512-7JHHCbyCsGUxLd0pDbp24yz3zjxw2t673W5oAP6HCEdr/UUhaRhYd3SSnUsGCk+VnPVJVA4mXROzbhI+nyIk+w==}
     dev: true
 
   /@typegoose/typegoose@11.3.0(mongoose@7.3.4):
@@ -862,11 +868,11 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-jest@27.2.2(@typescript-eslint/eslint-plugin@5.62.0)(eslint@8.44.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-euzbp06F934Z7UDl5ZUaRPLAc9MKjh0rMPERrHT7UhlCEwgb25kBj37TvMgWeHZVkR5I9CayswrpoaqZU1RImw==}
+  /eslint-plugin-jest@27.2.3(@typescript-eslint/eslint-plugin@5.62.0)(eslint@8.44.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-sRLlSCpICzWuje66Gl9zvdF6mwD5X86I4u55hJyFBsxYOsBCmT5+kSUjf+fkFWVMMgpzNEupjW8WzUqi83hJAQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^5.0.0
+      '@typescript-eslint/eslint-plugin': ^5.0.0 || ^6.0.0
       eslint: ^7.0.0 || ^8.0.0
       jest: '*'
     peerDependenciesMeta:
@@ -2308,9 +2314,9 @@ packages:
       nan: 2.17.0
     dev: false
 
-  github.com/promise/eslint-config/81b7735691c6296afa0faa8273444b9f4e13b253(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-i@2.27.5-4)(eslint-plugin-jest@27.2.2)(eslint-plugin-react@7.32.2)(eslint@8.44.0):
-    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/81b7735691c6296afa0faa8273444b9f4e13b253}
-    id: github.com/promise/eslint-config/81b7735691c6296afa0faa8273444b9f4e13b253
+  github.com/promise/eslint-config/ece4636087e48ada2fc1ef94221556fb891a254a(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-i@2.27.5-4)(eslint-plugin-jest@27.2.3)(eslint-plugin-react@7.32.2)(eslint@8.44.0):
+    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/ece4636087e48ada2fc1ef94221556fb891a254a}
+    id: github.com/promise/eslint-config/ece4636087e48ada2fc1ef94221556fb891a254a
     name: eslint-config-promise
     version: 0.0.0
     peerDependencies:
@@ -2318,13 +2324,13 @@ packages:
       '@typescript-eslint/parser': ^5.62.0
       eslint: ^8.44.0
       eslint-plugin-i: 2.27.5-4
-      eslint-plugin-jest: ^27.2.2
+      eslint-plugin-jest: ^27.2.3
       eslint-plugin-react: ^7.32.2
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.44.0)(typescript@5.1.6)
       '@typescript-eslint/parser': 5.62.0(eslint@8.44.0)(typescript@5.1.6)
       eslint: 8.44.0
       eslint-plugin-i: 2.27.5-4(@typescript-eslint/parser@5.62.0)(eslint@8.44.0)
-      eslint-plugin-jest: 27.2.2(@typescript-eslint/eslint-plugin@5.62.0)(eslint@8.44.0)(typescript@5.1.6)
+      eslint-plugin-jest: 27.2.3(@typescript-eslint/eslint-plugin@5.62.0)(eslint@8.44.0)(typescript@5.1.6)
       eslint-plugin-react: 7.32.2(eslint@8.44.0)
     dev: true
