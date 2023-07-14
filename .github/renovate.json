@@ -1,3 +1,6 @@
 {
-  "extends": ["github>promise/renovate-config", "github>promise/renovate-config:force-node-version(16)"]
+  "extends": [
+    "github>promise/renovate-config",
+    "github>promise/renovate-config:force-node-version(18)"
+  ]
 }
