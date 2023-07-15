@@ -30,7 +30,7 @@ async function nestCommands(relativePath: string, type: "CHAT_INPUT" | "MENU"): 
   const arr: ApplicationCommandData[] = [];
   for (const fileName of files.filter(file => !file.startsWith("_") && file !== "index.js")) {
     if (type === "MENU") {
-      const command = await legacyImportDefault<ContextMenuCommand>(`${relativePath}/${fileName}`);
+      const command = await legacyImportDefault<ContextMenuCommand>(require.resolve(`${relativePath}/${fileName}`));
       arr.push({
         name: fileName.split(".")[0]!,
         type: command.type,
@@ -39,7 +39,7 @@ async function nestCommands(relativePath: string, type: "CHAT_INPUT" | "MENU"): 
 
     if (type === "CHAT_INPUT") {
       if (fileName.includes(".")) {
-        const command = await legacyImportDefault<ChatInputCommand>(`${relativePath}/${fileName}`);
+        const command = await legacyImportDefault<ChatInputCommand>(require.resolve(`${relativePath}/${fileName}`));
         arr.push({
           name: fileName.split(".")[0]!,
           type: ApplicationCommandType.ChatInput,
@@ -52,7 +52,7 @@ async function nestCommands(relativePath: string, type: "CHAT_INPUT" | "MENU"): 
           const subArr: Array<ApplicationCommandSubCommandData | ApplicationCommandSubGroupData> = [];
           for (const subFileName of subFiles.filter(file => !file.startsWith("_"))) {
             if (subFileName.includes(".")) {
-              const command = await legacyImportDefault<ChatInputCommand>(`${relativeSubPath}/${subFileName}`);
+              const command = await legacyImportDefault<ChatInputCommand>(require.resolve(`${relativeSubPath}/${subFileName}`));
               subArr.push({
                 type: ApplicationCommandOptionType.Subcommand,
                 name: subFileName.split(".")[0]!,

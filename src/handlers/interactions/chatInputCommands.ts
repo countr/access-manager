@@ -9,11 +9,11 @@ import mainLogger from "../../utils/logger/main";
 
 export default async function chatInputCommandHandler(interaction: ChatInputCommandInteraction<"cached">): Promise<void> {
   try {
-    const command = await legacyImportDefault<ChatInputCommand>(`../../commands/chatInput/${[
+    const command = await legacyImportDefault<ChatInputCommand>(require.resolve(`../../commands/chatInput/${[
       interaction.commandName,
       interaction.options.getSubcommandGroup(false),
       interaction.options.getSubcommand(false),
-    ].filter(Boolean).join("/")}`);
+    ].filter(Boolean).join("/")}`));
 
     const permissionLevel = getPermissionLevel(interaction.member);
     if (permissionLevel < (command.permissionLevel ?? PermissionLevel.None)) return void interaction.reply({ content: "❌ You don't have access to do this.", ephemeral: true });

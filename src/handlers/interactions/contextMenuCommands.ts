@@ -10,7 +10,7 @@ export default async function contextMenuCommandHandler(interaction: ContextMenu
   const applicationCommand = commands?.cache.find(({ name }) => name === interaction.commandName);
   if (!applicationCommand) return;
 
-  const command = await legacyImportDefault<ContextMenuCommand>(`../../commands/menu/${applicationCommand.name}`);
+  const command = await legacyImportDefault<ContextMenuCommand>(require.resolve(`../../commands/menu/${applicationCommand.name}`));
 
   const permissionLevel = getPermissionLevel(interaction.member);
   if (permissionLevel < (command.permissionLevel ?? PermissionLevel.None)) return void interaction.reply({ content: "❌ You don't have access to do this.", ephemeral: true });
