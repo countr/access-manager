@@ -4,15 +4,16 @@ import type { ChatInputCommand } from "../../commands/chatInput";
 import config from "../../config";
 import { PermissionLevel, getPermissionLevel } from "../../constants/permissions";
 import { Access } from "../../database/models/Access";
+import { legacyImportDefault } from "../../utils/import";
 import mainLogger from "../../utils/logger/main";
 
 export default async function chatInputCommandHandler(interaction: ChatInputCommandInteraction<"cached">): Promise<void> {
   try {
-    const { default: command } = await import(`../../commands/chatInput/${[
+    const command = await legacyImportDefault<ChatInputCommand>(`../../commands/chatInput/${[
       interaction.commandName,
       interaction.options.getSubcommandGroup(false),
       interaction.options.getSubcommand(false),
-    ].filter(Boolean).join("/")}`) as { default: ChatInputCommand };
+    ].filter(Boolean).join("/")}`);
 
     const permissionLevel = getPermissionLevel(interaction.member);
     if (permissionLevel < (command.permissionLevel ?? PermissionLevel.None)) return void interaction.reply({ content: "❌ You don't have access to do this.", ephemeral: true });

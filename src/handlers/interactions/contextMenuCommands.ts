@@ -3,13 +3,14 @@ import { ApplicationCommandType } from "discord.js";
 import type { ContextMenuCommand } from "../../commands/menu";
 import config from "../../config";
 import { PermissionLevel, getPermissionLevel } from "../../constants/permissions";
+import { legacyImportDefault } from "../../utils/import";
 
 export default async function contextMenuCommandHandler(interaction: ContextMenuCommandInteraction<"cached">): Promise<void> {
   const commands = config.guild ? interaction.client.guilds.cache.get(config.guild)?.commands : interaction.client.application.commands;
   const applicationCommand = commands?.cache.find(({ name }) => name === interaction.commandName);
   if (!applicationCommand) return;
 
-  const { default: command } = await import(`../../commands/menu/${applicationCommand.name}`) as { default: ContextMenuCommand };
+  const command = await legacyImportDefault<ContextMenuCommand>(`../../commands/menu/${applicationCommand.name}`);
 
   const permissionLevel = getPermissionLevel(interaction.member);
   if (permissionLevel < (command.permissionLevel ?? PermissionLevel.None)) return void interaction.reply({ content: "❌ You don't have access to do this.", ephemeral: true });

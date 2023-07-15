@@ -5,6 +5,7 @@ import { ApplicationCommandOptionType, ApplicationCommandType, InteractionType }
 import type { ChatInputCommand } from "../../commands/chatInput";
 import type { ContextMenuCommand } from "../../commands/menu";
 import config from "../../config";
+import { legacyImportDefault } from "../../utils/import";
 import chatInputCommandHandler from "./chatInputCommands";
 import contextMenuCommandHandler from "./contextMenuCommands";
 
@@ -29,7 +30,7 @@ async function nestCommands(relativePath: string, type: "CHAT_INPUT" | "MENU"): 
   const arr: ApplicationCommandData[] = [];
   for (const fileName of files.filter(file => !file.startsWith("_") && file !== "index.js")) {
     if (type === "MENU") {
-      const { default: command } = await import(`${relativePath}/${fileName}`) as { default: ContextMenuCommand };
+      const command = await legacyImportDefault<ContextMenuCommand>(`${relativePath}/${fileName}`);
       arr.push({
         name: fileName.split(".")[0]!,
         type: command.type,
@@ -38,7 +39,7 @@ async function nestCommands(relativePath: string, type: "CHAT_INPUT" | "MENU"): 
 
     if (type === "CHAT_INPUT") {
       if (fileName.includes(".")) {
-        const { default: command } = await import(`${relativePath}/${fileName}`) as { default: ChatInputCommand };
+        const command = await legacyImportDefault<ChatInputCommand>(`${relativePath}/${fileName}`);
         arr.push({
           name: fileName.split(".")[0]!,
           type: ApplicationCommandType.ChatInput,
@@ -51,7 +52,7 @@ async function nestCommands(relativePath: string, type: "CHAT_INPUT" | "MENU"): 
           const subArr: Array<ApplicationCommandSubCommandData | ApplicationCommandSubGroupData> = [];
           for (const subFileName of subFiles.filter(file => !file.startsWith("_"))) {
             if (subFileName.includes(".")) {
-              const { default: command } = await import(`${relativeSubPath}/${subFileName}`) as { default: ChatInputCommand };
+              const command = await legacyImportDefault<ChatInputCommand>(`${relativeSubPath}/${subFileName}`);
               subArr.push({
                 type: ApplicationCommandOptionType.Subcommand,
                 name: subFileName.split(".")[0]!,
