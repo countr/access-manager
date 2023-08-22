@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@typegoose/typegoose':
     specifier: 11.4.1
-    version: 11.4.1(mongoose@7.4.3)
+    version: 11.4.1(mongoose@7.4.4)
   bufferutil:
     specifier: 4.0.7
     version: 4.0.7
@@ -21,8 +21,8 @@ dependencies:
     specifier: github:discord/erlpack
     version: github.com/discord/erlpack/cbe76be04c2210fc9cb6ff95910f0937c1011d04
   mongoose:
-    specifier: 7.4.3
-    version: 7.4.3
+    specifier: 7.4.4
+    version: 7.4.4
   utf-8-validate:
     specifier: 6.0.3
     version: 6.0.3
@@ -51,7 +51,7 @@ devDependencies:
     version: 8.47.0
   eslint-config-promise:
     specifier: github:promise/eslint-config
-    version: github.com/promise/eslint-config/e14bb4f59c36e18da2e08b6fbb4bf4df44c8bfc5(@typescript-eslint/eslint-plugin@6.4.1)(@typescript-eslint/parser@6.4.1)(eslint-plugin-i@2.27.5)(eslint-plugin-jest@27.2.3)(eslint-plugin-react@7.33.2)(eslint@8.47.0)
+    version: github.com/promise/eslint-config/506b9d0294bdbad2a41a05eb1e4ae891e5f7672e(@typescript-eslint/eslint-plugin@6.4.1)(@typescript-eslint/parser@6.4.1)(eslint-plugin-i@2.27.5)(eslint-plugin-jest@27.2.3)(eslint-plugin-react@7.33.2)(eslint@8.47.0)
   typescript:
     specifier: 5.1.6
     version: 5.1.6
@@ -243,7 +243,7 @@ packages:
     resolution: {integrity: sha512-7JHHCbyCsGUxLd0pDbp24yz3zjxw2t673W5oAP6HCEdr/UUhaRhYd3SSnUsGCk+VnPVJVA4mXROzbhI+nyIk+w==}
     dev: true
 
-  /@typegoose/typegoose@11.4.1(mongoose@7.4.3):
+  /@typegoose/typegoose@11.4.1(mongoose@7.4.4):
     resolution: {integrity: sha512-mOMEUBaxnSYtnGWAMsduh1+4MeJHpYN2+rhZ5rHq9mKRT8Ix3nsR0QWEnFIIqTnksL0Yt3Ww7Qj8IFzWhoIyoQ==}
     engines: {node: '>=14.17.0'}
     peerDependencies:
@@ -251,7 +251,7 @@ packages:
     dependencies:
       lodash: 4.17.21
       loglevel: 1.8.1
-      mongoose: 7.4.3
+      mongoose: 7.4.4
       reflect-metadata: 0.1.13
       semver: 7.5.4
       tslib: 2.6.1
@@ -1742,8 +1742,8 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose@7.4.3:
-    resolution: {integrity: sha512-eok0lW6mZJHK2vVSWyJb9tUfPMUuRF3h7YC4pU2K2/YSZBlNDUwvKsHgftMOANbokP2Ry+4ylvzAdW4KjkRFjw==}
+  /mongoose@7.4.4:
+    resolution: {integrity: sha512-LOOviiEqWOLH4PuBK+jbpm5vjBkdSNBcP/4UCevOJMTl5SXSbCXr68ulEYcthLcN2/xi08452HupKD8BfxNIQw==}
     engines: {node: '>=14.20.1'}
     dependencies:
       bson: 5.4.0
@@ -2518,9 +2518,9 @@ packages:
       nan: 2.17.0
     dev: false
 
-  github.com/promise/eslint-config/e14bb4f59c36e18da2e08b6fbb4bf4df44c8bfc5(@typescript-eslint/eslint-plugin@6.4.1)(@typescript-eslint/parser@6.4.1)(eslint-plugin-i@2.27.5)(eslint-plugin-jest@27.2.3)(eslint-plugin-react@7.33.2)(eslint@8.47.0):
-    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/e14bb4f59c36e18da2e08b6fbb4bf4df44c8bfc5}
-    id: github.com/promise/eslint-config/e14bb4f59c36e18da2e08b6fbb4bf4df44c8bfc5
+  github.com/promise/eslint-config/506b9d0294bdbad2a41a05eb1e4ae891e5f7672e(@typescript-eslint/eslint-plugin@6.4.1)(@typescript-eslint/parser@6.4.1)(eslint-plugin-i@2.27.5)(eslint-plugin-jest@27.2.3)(eslint-plugin-react@7.33.2)(eslint@8.47.0):
+    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/506b9d0294bdbad2a41a05eb1e4ae891e5f7672e}
+    id: github.com/promise/eslint-config/506b9d0294bdbad2a41a05eb1e4ae891e5f7672e
     name: eslint-config-promise
     version: 0.0.0
     peerDependencies:
