@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@tsconfig/node18": "18.2.1",
-    "@tsconfig/strictest": "2.0.1",
+    "@tsconfig/strictest": "2.0.2",
     "@types/node": "18.17.12",
     "eslint": "8.48.0",
     "eslint-config-promise": "github:promise/eslint-config",
