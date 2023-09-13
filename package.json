@@ -29,7 +29,7 @@
     "zlib-sync": "0.1.8"
   },
   "devDependencies": {
-    "@tsconfig/node18": "18.2.1",
+    "@tsconfig/node18": "18.2.2",
     "@tsconfig/strictest": "2.0.2",
     "@types/node": "18.17.15",
     "eslint": "8.49.0",
