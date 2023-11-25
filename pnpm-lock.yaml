@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@typegoose/typegoose':
-    specifier: 11.5.0
-    version: 11.5.0(mongoose@8.0.1)
+    specifier: 12.0.0
+    version: 12.0.0(mongoose@8.0.1)
   bufferutil:
     specifier: 4.0.8
     version: 4.0.8
@@ -295,11 +295,11 @@ packages:
     resolution: {integrity: sha512-jt4jIsWKvUvuY6adJnQJlb/UR7DdjC8CjHI/OaSQruj2yX9/K6+KOvDt/vD6udqos/FUk5Op66CvYT7TBLYO5Q==}
     dev: true
 
-  /@typegoose/typegoose@11.5.0(mongoose@8.0.1):
-    resolution: {integrity: sha512-+ca//+8hUzOdK7mJTxHwqMiQjarVGCkF5x073ZScXfWOw35kPOzvvQwBEqFiVMhKW5txkiswsALwriJxhYcO2A==}
-    engines: {node: '>=14.17.0'}
+  /@typegoose/typegoose@12.0.0(mongoose@8.0.1):
+    resolution: {integrity: sha512-ZkRtjiCO4k05bLPtUXX3Ho7zMLLOKvg6+3JBVtadpC4xUu5htfDf5H+TI+w1jL1d8Q51aN8mHH7L5hr7OSkzoA==}
+    engines: {node: '>=16.20.1'}
     peerDependencies:
-      mongoose: ~7.5.0
+      mongoose: ~8.0.1
     dependencies:
       lodash: 4.17.21
       loglevel: 1.8.1
