@@ -26,14 +26,14 @@ const client = new Client({
   rest: { userAgentAppendix: "Countr (countr.xyz)" },
 });
 
-client.once("ready", async trueClient => {
+client.once("ready", trueClient => void (async () => {
   mainLogger.info(`Ready as ${trueClient.user.tag}!`);
 
   await client.guilds.fetch(config.guild);
 
   accessHandler(trueClient);
   void interactionsHandler(trueClient);
-});
+})());
 
 // discord debug logging
 client
