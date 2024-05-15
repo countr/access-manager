@@ -22,7 +22,7 @@
     "discord.js": "14.15.2",
     "dotenv": "16.4.5",
     "erlpack": "github:discord/erlpack",
-    "mongoose": "8.3.4",
+    "mongoose": "8.3.5",
     "utf-8-validate": "6.0.4",
     "winston": "3.13.0",
     "winston-daily-rotate-file": "5.0.0",
