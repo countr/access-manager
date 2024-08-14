@@ -8,17 +8,14 @@ export default function accessHandler(client: Client<true>): void {
 
   setInterval(() => void Access.find().then(async documents => {
     for (const document of documents) {
-      if (document.expires.getTime() < Date.now() - config.access.cleanGrace) await document.deleteOne();
-      else {
-        const member = await guild.members.fetch(document.userId).catch(() => null);
-        if (member) {
-          const tokens = getTokens(member);
-          if (tokens) {
-            document.expires = new Date(Date.now() + config.access.expireGrace);
-            document.guildIds.length = Math.min(document.guildIds.length, tokens);
-            await document.save();
-          }
-        }
+      const member = await guild.members.fetch(document.userId).catch(() => null);
+      const tokens = member ? getTokens(member) : 0;
+      if (tokens) {
+        document.expires = new Date(Date.now() + config.access.expireGrace);
+        document.guildIds.length = Math.min(document.guildIds.length, tokens);
+        await document.save();
+      } else if (document.expires < new Date()) {
+        await document.deleteOne();
       }
     }
   }), config.access.interval);
