@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@typegoose/typegoose':
     specifier: 12.8.0
-    version: 12.8.0(mongoose@8.7.0)
+    version: 12.8.0(mongoose@8.7.1)
   bufferutil:
     specifier: 4.0.8
     version: 4.0.8
@@ -21,8 +21,8 @@ dependencies:
     specifier: github:discord/erlpack
     version: github.com/discord/erlpack/b25ebd51ae4c097bd7f756fd4e1c841b61bfe50b
   mongoose:
-    specifier: 8.7.0
-    version: 8.7.0
+    specifier: 8.7.1
+    version: 8.7.1
   utf-8-validate:
     specifier: 6.0.4
     version: 6.0.4
@@ -347,7 +347,7 @@ packages:
     resolution: {integrity: sha512-ec4tjL2Rr0pkZ5hww65c+EEPYwxOi4Ryv+0MtjeaSQRJyq322Q27eOQiFbuNgw2hpL4hB1/W/HBGk3VKS43osg==}
     dev: true
 
-  /@typegoose/typegoose@12.8.0(mongoose@8.7.0):
+  /@typegoose/typegoose@12.8.0(mongoose@8.7.1):
     resolution: {integrity: sha512-YCeYYH0joT4n48WRUfofPq3KBg6OQw1zR6wB4WKflkFYf9SC4P29hf0PlmsiA+hAbubd3Qn51KmkjiUJetJmFQ==}
     engines: {node: '>=16.20.1'}
     peerDependencies:
@@ -355,7 +355,7 @@ packages:
     dependencies:
       lodash: 4.17.21
       loglevel: 1.9.2
-      mongoose: 8.7.0
+      mongoose: 8.7.1
       reflect-metadata: 0.2.2
       semver: 7.6.3
       tslib: 2.7.0
@@ -2240,8 +2240,8 @@ packages:
       mongodb-connection-string-url: 3.0.1
     dev: false
 
-  /mongoose@8.7.0:
-    resolution: {integrity: sha512-rUCSF1mMYQXjXYdqEQLLlMD3xbcj2j1/hRn+9VnVj7ipzru/UoUZxlj/hWmteKMAh4EFnDZ+BIrmma9l/0Hi1g==}
+  /mongoose@8.7.1:
+    resolution: {integrity: sha512-RpNMyhyzLVCVbf8xTVbrf/18G3MqQzNw5pJdvOJ60fzbCa3cOZzz9L+8XpqzBXtRlgZGWv0T7MmOtvrT8ocp1Q==}
     engines: {node: '>=16.20.1'}
     dependencies:
       bson: 6.8.0
