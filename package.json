@@ -38,5 +38,6 @@
   },
   "eslintConfig": {
     "extends": "promise"
-  }
+  },
+  "packageManager": "pnpm@9.15.0"
 }

@@ -1,6 +1,6 @@
 import type { Snowflake } from "discord.js";
-import config from "../config";
 import type { AccessDocument } from "./models/Access";
+import config from "../config";
 import { Access } from "./models/Access";
 
 export async function getAccess(userId: Snowflake): Promise<AccessDocument | null> {
