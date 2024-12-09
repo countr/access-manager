@@ -1,7 +1,7 @@
-import { readdir } from "fs/promises";
-import { join } from "path";
 import type { ApplicationCommandData, ApplicationCommandSubCommandData, ApplicationCommandSubGroupData, Client } from "discord.js";
 import { ApplicationCommandOptionType, ApplicationCommandType, InteractionType } from "discord.js";
+import { readdir } from "fs/promises";
+import { join } from "path";
 import type { ChatInputCommand } from "../../commands/chatInput";
 import type { ContextMenuCommand } from "../../commands/menu";
 import config from "../../config";

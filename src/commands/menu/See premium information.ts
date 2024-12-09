@@ -1,8 +1,8 @@
 import { ApplicationCommandType } from "discord.js";
+import type { ContextMenuCommand } from ".";
 import config from "../../config";
 import getTokens from "../../constants/tokens";
 import { createAccess, getAccess } from "../../database";
-import type { ContextMenuCommand } from ".";
 
 const command: ContextMenuCommand = {
   type: ApplicationCommandType.User,

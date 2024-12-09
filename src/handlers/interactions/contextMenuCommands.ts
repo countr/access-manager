@@ -2,7 +2,7 @@ import type { ContextMenuCommandInteraction } from "discord.js";
 import { ApplicationCommandType } from "discord.js";
 import type { ContextMenuCommand } from "../../commands/menu";
 import config from "../../config";
-import { PermissionLevel, getPermissionLevel } from "../../constants/permissions";
+import { getPermissionLevel, PermissionLevel } from "../../constants/permissions";
 import { legacyImportDefault } from "../../utils/import";
 
 export default async function contextMenuCommandHandler(interaction: ContextMenuCommandInteraction<"cached">): Promise<void> {

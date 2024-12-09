@@ -1,8 +1,8 @@
-import { inspect } from "util";
 import type { ChatInputCommandInteraction } from "discord.js";
+import { inspect } from "util";
 import type { ChatInputCommand } from "../../commands/chatInput";
 import config from "../../config";
-import { PermissionLevel, getPermissionLevel } from "../../constants/permissions";
+import { getPermissionLevel, PermissionLevel } from "../../constants/permissions";
 import { Access } from "../../database/models/Access";
 import { legacyImportDefault } from "../../utils/import";
 import mainLogger from "../../utils/logger/main";
