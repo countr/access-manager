@@ -21,9 +21,7 @@
     "bufferutil": "4.0.8",
     "discord.js": "14.16.3",
     "dotenv": "16.4.7",
-    "erlpack": "github:discord/erlpack",
     "mongoose": "8.8.4",
-    "utf-8-validate": "6.0.5",
     "winston": "3.17.0",
     "winston-daily-rotate-file": "5.0.0",
     "zlib-sync": "0.1.9"
@@ -35,9 +33,6 @@
     "eslint": "9.16.0",
     "eslint-config-promise": "github:promise/eslint-config",
     "typescript": "5.7.2"
-  },
-  "eslintConfig": {
-    "extends": "promise"
   },
   "packageManager": "pnpm@9.15.0"
 }
