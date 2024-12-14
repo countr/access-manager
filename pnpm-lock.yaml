@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@typegoose/typegoose':
-        specifier: 12.9.1
-        version: 12.9.1(mongoose@8.8.4)
+        specifier: 12.10.1
+        version: 12.10.1(mongoose@8.9.0)
       bufferutil:
         specifier: 4.0.8
         version: 4.0.8
@@ -21,8 +21,8 @@ importers:
         specifier: 16.4.7
         version: 16.4.7
       mongoose:
-        specifier: 8.8.4
-        version: 8.8.4
+        specifier: 8.9.0
+        version: 8.9.0
       winston:
         specifier: 3.17.0
         version: 3.17.0
@@ -47,7 +47,7 @@ importers:
         version: 9.17.0(jiti@1.21.6)
       eslint-config-promise:
         specifier: github:promise/eslint-config
-        version: https://codeload.github.com/promise/eslint-config/tar.gz/dc30c8db0e8a5da7584de032ec8dd7fae803416c(rcmxua5aq66cclcitr6bgovsme)
+        version: https://codeload.github.com/promise/eslint-config/tar.gz/493cecfc90c494e9fefe25973999f728b6a45c3b(rcmxua5aq66cclcitr6bgovsme)
       typescript:
         specifier: 5.7.2
         version: 5.7.2
@@ -227,11 +227,11 @@ packages:
   '@tsconfig/strictest@2.0.5':
     resolution: {integrity: sha512-ec4tjL2Rr0pkZ5hww65c+EEPYwxOi4Ryv+0MtjeaSQRJyq322Q27eOQiFbuNgw2hpL4hB1/W/HBGk3VKS43osg==}
 
-  '@typegoose/typegoose@12.9.1':
-    resolution: {integrity: sha512-3YMuGVWvl1V16gkWi1Q2PdEa7QWEPP3Coz0MkEeqgXAOR4N4/It3YIFoccNRfq/mFTx0dJAwgqLMK4qBCVC9MA==}
+  '@typegoose/typegoose@12.10.1':
+    resolution: {integrity: sha512-ueJx86GkNQX9ZaWGAeAHItKPK31OhcHVGSbzjSmjsocXztw7QEN+y7NeFgDRB/2O4TK2i36cbkVmVWjHV1B/cg==}
     engines: {node: '>=16.20.1'}
     peerDependencies:
-      mongoose: ~8.8.0
+      mongoose: ~8.9.0
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -446,8 +446,8 @@ packages:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
 
-  bson@6.10.0:
-    resolution: {integrity: sha512-ROchNosXMJD2cbQGm84KoP7vOGPO6/bOAW0veMMbzhXLqoZptcaYRVLitwvuhwhjjpU1qP4YZRWLhgETdgqUQw==}
+  bson@6.10.1:
+    resolution: {integrity: sha512-P92xmHDQjSKPLHqFxefqMxASNq/aWJMEZugpCjf+AF/pgcUpMMQCg7t7+ewko0/u8AapvF3luf/FoehddEK+sA==}
     engines: {node: '>=16.20.1'}
 
   bufferutil@4.0.8:
@@ -634,8 +634,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/dc30c8db0e8a5da7584de032ec8dd7fae803416c:
-    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/dc30c8db0e8a5da7584de032ec8dd7fae803416c}
+  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/493cecfc90c494e9fefe25973999f728b6a45c3b:
+    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/493cecfc90c494e9fefe25973999f728b6a45c3b}
     version: 0.0.0
     peerDependencies:
       '@stylistic/eslint-plugin-js': 2.12.1
@@ -643,7 +643,7 @@ packages:
       '@stylistic/eslint-plugin-ts': 2.12.1
       '@typescript-eslint/eslint-plugin': 8.18.0
       '@typescript-eslint/parser': 8.18.0
-      eslint: 9.16.0
+      eslint: 9.17.0
       eslint-plugin-import: 2.31.0
       eslint-plugin-jest: 28.9.0
       eslint-plugin-perfectionist: 4.3.0
@@ -1142,12 +1142,12 @@ packages:
   mongodb-connection-string-url@3.0.1:
     resolution: {integrity: sha512-XqMGwRX0Lgn05TDB4PyG2h2kKO/FfWJyCzYQbIhXUxz7ETt0I/FqHjUeqj37irJ+Dl1ZtU82uYyj14u2XsZKfg==}
 
-  mongodb@6.10.0:
-    resolution: {integrity: sha512-gP9vduuYWb9ZkDM546M+MP2qKVk5ZG2wPF63OvSRuUbqCR+11ZCAE1mOfllhlAG0wcoJY5yDL/rV3OmYEwXIzg==}
+  mongodb@6.12.0:
+    resolution: {integrity: sha512-RM7AHlvYfS7jv7+BXund/kR64DryVI+cHbVAy9P61fnb1RcWZqOW1/Wj2YhqMCx+MuYhqTRGv7AwHBzmsCKBfA==}
     engines: {node: '>=16.20.1'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.188.0
-      '@mongodb-js/zstd': ^1.1.0
+      '@mongodb-js/zstd': ^1.1.0 || ^2.0.0
       gcp-metadata: ^5.2.0
       kerberos: ^2.0.1
       mongodb-client-encryption: '>=6.0.0 <7'
@@ -1169,8 +1169,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@8.8.4:
-    resolution: {integrity: sha512-yJbn695qCsqDO+xyPII29x2R7flzXhxCDv09mMZPSGllf0sm4jKw3E9s9uvQ9hjO6bL2xjU8KKowYqcY9eSTMQ==}
+  mongoose@8.9.0:
+    resolution: {integrity: sha512-b58zY3PLNBcoz6ZXFckr0leJcVVBMAOBvD+7Bj2ZjghAwntXmNnqwlDixTKQU3UYoQIGTv+AQx/0ThsvaeVrCA==}
     engines: {node: '>=16.20.1'}
 
   mpath@0.9.0:
@@ -1891,11 +1891,11 @@ snapshots:
 
   '@tsconfig/strictest@2.0.5': {}
 
-  '@typegoose/typegoose@12.9.1(mongoose@8.8.4)':
+  '@typegoose/typegoose@12.10.1(mongoose@8.9.0)':
     dependencies:
       lodash: 4.17.21
       loglevel: 1.9.2
-      mongoose: 8.8.4
+      mongoose: 8.9.0
       reflect-metadata: 0.2.2
       semver: 7.6.3
       tslib: 2.8.1
@@ -2165,7 +2165,7 @@ snapshots:
     dependencies:
       fill-range: 7.1.1
 
-  bson@6.10.0: {}
+  bson@6.10.1: {}
 
   bufferutil@4.0.8:
     dependencies:
@@ -2424,7 +2424,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/dc30c8db0e8a5da7584de032ec8dd7fae803416c(rcmxua5aq66cclcitr6bgovsme):
+  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/493cecfc90c494e9fefe25973999f728b6a45c3b(rcmxua5aq66cclcitr6bgovsme):
     dependencies:
       '@stylistic/eslint-plugin-js': 2.12.0(eslint@9.17.0(jiti@1.21.6))
       '@stylistic/eslint-plugin-jsx': 2.12.0(eslint@9.17.0(jiti@1.21.6))
@@ -2978,17 +2978,17 @@ snapshots:
       '@types/whatwg-url': 11.0.5
       whatwg-url: 13.0.0
 
-  mongodb@6.10.0:
+  mongodb@6.12.0:
     dependencies:
       '@mongodb-js/saslprep': 1.1.9
-      bson: 6.10.0
+      bson: 6.10.1
       mongodb-connection-string-url: 3.0.1
 
-  mongoose@8.8.4:
+  mongoose@8.9.0:
     dependencies:
-      bson: 6.10.0
+      bson: 6.10.1
       kareem: 2.6.3
-      mongodb: 6.10.0
+      mongodb: 6.12.0
       mpath: 0.9.0
       mquery: 5.0.0
       ms: 2.1.3
