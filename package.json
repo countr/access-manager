@@ -17,11 +17,11 @@
     "watch": "tsc -w"
   },
   "dependencies": {
-    "@typegoose/typegoose": "12.9.1",
+    "@typegoose/typegoose": "12.10.1",
     "bufferutil": "4.0.8",
     "discord.js": "14.16.3",
     "dotenv": "16.4.7",
-    "mongoose": "8.8.4",
+    "mongoose": "8.9.0",
     "winston": "3.17.0",
     "winston-daily-rotate-file": "5.0.0",
     "zlib-sync": "0.1.9"
