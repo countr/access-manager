@@ -19,7 +19,7 @@
   "dependencies": {
     "@typegoose/typegoose": "12.10.1",
     "bufferutil": "4.0.9",
-    "discord.js": "14.17.3",
+    "discord.js": "14.18.0",
     "dotenv": "16.4.7",
     "mongoose": "8.9.6",
     "winston": "3.17.0",
