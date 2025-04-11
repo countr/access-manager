@@ -18,8 +18,8 @@ importers:
         specifier: 14.18.0
         version: 14.18.0(bufferutil@4.0.9)
       dotenv:
-        specifier: 16.4.7
-        version: 16.4.7
+        specifier: 16.5.0
+        version: 16.5.0
       mongoose:
         specifier: 8.10.2
         version: 8.10.2
@@ -47,7 +47,7 @@ importers:
         version: 9.24.0(jiti@1.21.7)
       eslint-config-promise:
         specifier: github:promise/eslint-config
-        version: https://codeload.github.com/promise/eslint-config/tar.gz/5a04987003cba0f79f39b5791cf351c034e5e27d(5gd5qefcotzrl4om4qwfjantiy)
+        version: https://codeload.github.com/promise/eslint-config/tar.gz/50a42ccef40d5fb99752da20ea9c543dedeb12ca(5gd5qefcotzrl4om4qwfjantiy)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -597,8 +597,8 @@ packages:
     resolution: {integrity: sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==}
     engines: {node: '>=0.10.0'}
 
-  dotenv@16.4.7:
-    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
+  dotenv@16.5.0:
+    resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
     engines: {node: '>=12'}
 
   dunder-proto@1.0.1:
@@ -653,8 +653,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/5a04987003cba0f79f39b5791cf351c034e5e27d:
-    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/5a04987003cba0f79f39b5791cf351c034e5e27d}
+  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/50a42ccef40d5fb99752da20ea9c543dedeb12ca:
+    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/50a42ccef40d5fb99752da20ea9c543dedeb12ca}
     version: 0.0.0
     peerDependencies:
       '@stylistic/eslint-plugin-js': 3.0.0
@@ -2411,7 +2411,7 @@ snapshots:
     dependencies:
       esutils: 2.0.3
 
-  dotenv@16.4.7: {}
+  dotenv@16.5.0: {}
 
   dunder-proto@1.0.1:
     dependencies:
@@ -2527,7 +2527,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/5a04987003cba0f79f39b5791cf351c034e5e27d(5gd5qefcotzrl4om4qwfjantiy):
+  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/50a42ccef40d5fb99752da20ea9c543dedeb12ca(5gd5qefcotzrl4om4qwfjantiy):
     dependencies:
       '@stylistic/eslint-plugin-js': 3.0.0(eslint@9.24.0(jiti@1.21.7))
       '@stylistic/eslint-plugin-jsx': 3.0.0(eslint@9.24.0(jiti@1.21.7))
