@@ -22,7 +22,7 @@
     "discord.js": "14.22.1",
     "dotenv": "17.2.3",
     "mongoose": "8.17.2",
-    "winston": "3.18.1",
+    "winston": "3.18.2",
     "winston-daily-rotate-file": "5.0.0",
     "zlib-sync": "0.1.10"
   },

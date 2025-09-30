@@ -24,11 +24,11 @@ importers:
         specifier: 8.17.2
         version: 8.17.2
       winston:
-        specifier: 3.18.1
-        version: 3.18.1
+        specifier: 3.18.2
+        version: 3.18.2
       winston-daily-rotate-file:
         specifier: 5.0.0
-        version: 5.0.0(winston@3.18.1)
+        version: 5.0.0(winston@3.18.2)
       zlib-sync:
         specifier: 0.1.10
         version: 0.1.10
@@ -151,8 +151,8 @@ packages:
     resolution: {integrity: sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==}
     engines: {node: '>=0.1.90'}
 
-  '@dabh/diagnostics@2.0.6':
-    resolution: {integrity: sha512-fuB2/plPknb9zp6TyJpnvEXYJddd4xEGoOMraVdK2bq99xpECHuTpqKJ+N40DGHLx1i4jiFzmX9Ti7hh6KLIbw==}
+  '@dabh/diagnostics@2.0.7':
+    resolution: {integrity: sha512-EnXa4T9/wuLw8iaEUFwIJMo0xNxyE3mzxLL14ixfVToJNQHG2Jwo8xMmafVJwAiAmIyHXsFDZpZR/TJC31857g==}
 
   '@discordjs/builders@1.11.2':
     resolution: {integrity: sha512-F1WTABdd8/R9D1icJzajC4IuLyyS8f3rTOz66JsSI3pKvpCAtsMBweu8cyNYsIyvcrKAVn9EPK+Psoymq+XC0A==}
@@ -247,10 +247,6 @@ packages:
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
 
-  '@jridgewell/gen-mapping@0.3.8':
-    resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
-    engines: {node: '>=6.0.0'}
-
   '@jridgewell/remapping@2.3.5':
     resolution: {integrity: sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==}
 
@@ -258,15 +254,8 @@ packages:
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
     engines: {node: '>=6.0.0'}
 
-  '@jridgewell/set-array@1.2.1':
-    resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
-    engines: {node: '>=6.0.0'}
-
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
-
-  '@jridgewell/trace-mapping@0.3.25':
-    resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
@@ -305,8 +294,8 @@ packages:
     resolution: {integrity: sha512-jjmJywLAFoWeBi1W7994zZyiNWPIiqRRNAmSERxyg93xRGzNYvGjlZ0gR6x0F4gPRi2+0O6S71kOZYyr3cxaIQ==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
 
-  '@so-ric/colorspace@1.1.5':
-    resolution: {integrity: sha512-m2yI81kZ+2J2psTYtmBs3lfl/LM4WgLMCzkweMfQdbbyndcyOmFa6pblHjvjfblphPaGDzTDK+lmC/dUMSnv0A==}
+  '@so-ric/colorspace@1.1.6':
+    resolution: {integrity: sha512-/KiKkpHNOBgkFJwu9sh48LkHSMYGyuTcSFK/qMBdnOAlrRJzRSXAOFB5qwzaVQuDl8wAvHVMkaASQDReTahxuw==}
 
   '@stylistic/eslint-plugin-js@4.2.0':
     resolution: {integrity: sha512-MiJr6wvyzMYl/wElmj8Jns8zH7Q1w8XoVtm+WM6yDaTrfxryMyb8n0CMxt82fo42RoLIfxAEtM6tmQVxqhk0/A==}
@@ -1843,8 +1832,8 @@ packages:
     resolution: {integrity: sha512-8drMJ4rkgaPo1Me4zD/3WLfI/zPdA9o2IipKODunnGDcuqbHwjsbB79ylv04LCGGzU0xQ6vTznOMpQGaLhhm6A==}
     engines: {node: '>= 12.0.0'}
 
-  winston@3.18.1:
-    resolution: {integrity: sha512-EaQ6y7b9h6q7UJQn4/xlOsiu0I8844FfMdbN6V2I2i4528qeEWqRUcHzhvkseckAb1QxMhwX5V2YYiABkOfGfg==}
+  winston@3.18.2:
+    resolution: {integrity: sha512-+yDkrWD2rWkv6XjSgK2QyujZDNsHE9YLa8S284TpVrYdaloMkZ7NvHzfnETYlSPOX9h5j5VJ+Ro9J872O8CC/g==}
     engines: {node: '>= 12.0.0'}
 
   word-wrap@1.2.5:
@@ -2013,9 +2002,9 @@ snapshots:
 
   '@colors/colors@1.6.0': {}
 
-  '@dabh/diagnostics@2.0.6':
+  '@dabh/diagnostics@2.0.7':
     dependencies:
-      '@so-ric/colorspace': 1.1.5
+      '@so-ric/colorspace': 1.1.6
       enabled: 2.0.0
       fix-esm: 1.0.1
       kuler: 2.0.0
@@ -2140,27 +2129,14 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.0
       '@jridgewell/trace-mapping': 0.3.31
 
-  '@jridgewell/gen-mapping@0.3.8':
-    dependencies:
-      '@jridgewell/set-array': 1.2.1
-      '@jridgewell/sourcemap-codec': 1.5.0
-      '@jridgewell/trace-mapping': 0.3.25
-
   '@jridgewell/remapping@2.3.5':
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.8
-      '@jridgewell/trace-mapping': 0.3.25
+      '@jridgewell/gen-mapping': 0.3.13
+      '@jridgewell/trace-mapping': 0.3.31
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
-  '@jridgewell/set-array@1.2.1': {}
-
   '@jridgewell/sourcemap-codec@1.5.0': {}
-
-  '@jridgewell/trace-mapping@0.3.25':
-    dependencies:
-      '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.5.0
 
   '@jridgewell/trace-mapping@0.3.31':
     dependencies:
@@ -2197,7 +2173,7 @@ snapshots:
 
   '@sapphire/snowflake@3.5.3': {}
 
-  '@so-ric/colorspace@1.1.5':
+  '@so-ric/colorspace@1.1.6':
     dependencies:
       color: 5.0.2
       text-hex: 1.0.0
@@ -3829,7 +3805,7 @@ snapshots:
 
   sucrase@3.35.0:
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.8
+      '@jridgewell/gen-mapping': 0.3.13
       commander: 4.1.1
       glob: 10.4.5
       lines-and-columns: 1.2.4
@@ -4021,12 +3997,12 @@ snapshots:
     dependencies:
       isexe: 2.0.0
 
-  winston-daily-rotate-file@5.0.0(winston@3.18.1):
+  winston-daily-rotate-file@5.0.0(winston@3.18.2):
     dependencies:
       file-stream-rotator: 0.6.1
       object-hash: 3.0.0
       triple-beam: 1.4.1
-      winston: 3.18.1
+      winston: 3.18.2
       winston-transport: 4.9.0
 
   winston-transport@4.9.0:
@@ -4035,10 +4011,10 @@ snapshots:
       readable-stream: 3.6.2
       triple-beam: 1.4.1
 
-  winston@3.18.1:
+  winston@3.18.2:
     dependencies:
       '@colors/colors': 1.6.0
-      '@dabh/diagnostics': 2.0.6
+      '@dabh/diagnostics': 2.0.7
       async: 3.2.6
       is-stream: 2.0.1
       logform: 2.7.0
