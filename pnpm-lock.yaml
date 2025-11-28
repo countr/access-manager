@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@typegoose/typegoose':
-        specifier: 12.18.0
-        version: 12.18.0(mongoose@9.0.0)
+        specifier: 12.20.0
+        version: 12.20.0(mongoose@9.0.0)
       bufferutil:
         specifier: 4.0.9
         version: 4.0.9
@@ -225,11 +225,11 @@ packages:
   '@tsconfig/strictest@2.0.8':
     resolution: {integrity: sha512-XnQ7vNz5HRN0r88GYf1J9JJjqtZPiHt2woGJOo2dYqyHGGcd6OLGqSlBB6p1j9mpzja6Oe5BoPqWmeDx6X9rLw==}
 
-  '@typegoose/typegoose@12.18.0':
-    resolution: {integrity: sha512-b1kXa4j0YZWXgc9B/xAzFbcEpIevf8PQ8LGK6Yl3clWpZKJLGKVMf/kE5mvat3nV1Twdr6OCWvMHFSVB3K5b7g==}
+  '@typegoose/typegoose@12.20.0':
+    resolution: {integrity: sha512-xto62e4iHDj71il+nOSDutW1O3/sA4ItPUM6sesnKsoPqVIdKg6T76Kafc7fTin8QrknYeo2/UthcDhLBBm1iA==}
     engines: {node: '>=16.20.1'}
     peerDependencies:
-      mongoose: ~8.17.0
+      mongoose: ~8.19.1
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -1937,7 +1937,7 @@ snapshots:
 
   '@tsconfig/strictest@2.0.8': {}
 
-  '@typegoose/typegoose@12.18.0(mongoose@9.0.0)':
+  '@typegoose/typegoose@12.20.0(mongoose@9.0.0)':
     dependencies:
       lodash: 4.17.21
       loglevel: 1.9.2
