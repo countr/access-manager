@@ -15,8 +15,8 @@ importers:
         specifier: 4.0.9
         version: 4.0.9
       discord.js:
-        specifier: 14.26.0
-        version: 14.26.0(bufferutil@4.0.9)
+        specifier: 14.26.1
+        version: 14.26.1(bufferutil@4.0.9)
       dotenv:
         specifier: 17.2.4
         version: 17.2.4
@@ -558,8 +558,8 @@ packages:
   discord-api-types@0.38.43:
     resolution: {integrity: sha512-sSoBf/nK6m7BGtw65mi+QBuvEWaHE8MMziFLqWL+gT6ME/BLg34dRSVKS3Husx40uU06bvxUc3/X+D9Y6/zAbw==}
 
-  discord.js@14.26.0:
-    resolution: {integrity: sha512-I+5dmdg7WnjIOEXspX6mJ4jLgblhZV6QpQcC3U2JjrFWnHCKDpoLkhV46SBP8k9QePs3YWJOvndVutUARRO0AQ==}
+  discord.js@14.26.1:
+    resolution: {integrity: sha512-yF+/myEVweJg2lENRt+b1SmsovmEKxPoaY5DILBfnIb5dnhw+J6RvdmvUPxUH32jmPB34gnPnymLji8w75bwVA==}
     engines: {node: '>=18'}
 
   dlv@1.1.3:
@@ -2291,7 +2291,7 @@ snapshots:
 
   discord-api-types@0.38.43: {}
 
-  discord.js@14.26.0(bufferutil@4.0.9):
+  discord.js@14.26.1(bufferutil@4.0.9):
     dependencies:
       '@discordjs/builders': 1.14.1
       '@discordjs/collection': 1.5.3
