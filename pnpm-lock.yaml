@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@typegoose/typegoose':
-        specifier: 12.20.1
-        version: 12.20.1(mongoose@9.0.2)
+        specifier: 12.21.1
+        version: 12.21.1(mongoose@9.6.1)
       bufferutil:
         specifier: 4.0.9
         version: 4.0.9
@@ -21,8 +21,8 @@ importers:
         specifier: 17.2.4
         version: 17.2.4
       mongoose:
-        specifier: 9.0.2
-        version: 9.0.2
+        specifier: 9.6.1
+        version: 9.6.1
       winston:
         specifier: 3.19.0
         version: 3.19.0
@@ -225,11 +225,11 @@ packages:
   '@tsconfig/strictest@2.0.8':
     resolution: {integrity: sha512-XnQ7vNz5HRN0r88GYf1J9JJjqtZPiHt2woGJOo2dYqyHGGcd6OLGqSlBB6p1j9mpzja6Oe5BoPqWmeDx6X9rLw==}
 
-  '@typegoose/typegoose@12.20.1':
-    resolution: {integrity: sha512-tHDg9XHOoCO09uy1IhTf9mDvLlIkh+TenwEha0P/SxXD0XMqMk1GdlhmjW1OP0movUdPepbdX3x801zZnh0M6w==}
+  '@typegoose/typegoose@12.21.1':
+    resolution: {integrity: sha512-lmFeUlki8ygtW7MsqxJbIBm1bsTKPvj5avHGz7ka1WZ0ZG0vhRwUoui2UvOnYZVtxjfk9ee/JXMKtaIjOh7Rmw==}
     engines: {node: '>=16.20.1'}
     peerDependencies:
-      mongoose: ~8.19.1
+      mongoose: ~8.21.0
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -1055,8 +1055,8 @@ packages:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
 
-  kareem@3.0.0:
-    resolution: {integrity: sha512-RKhaOBSPN8L7y4yAgNhDT2602G5FD6QbOIISbjN9D6mjHPeqeg7K+EB5IGSU5o81/X2Gzm3ICnAvQW3x3OP8HA==}
+  kareem@3.3.0:
+    resolution: {integrity: sha512-kpSuLD3/7RenBnjnJdOHXCKC8dTd1JzeOiJhN0necWWci6cC+qX+VuwPnMVgb+a4+KNJSfgqahpnfWaeDXCimw==}
     engines: {node: '>=18.0.0'}
 
   keyv@4.5.4:
@@ -1140,8 +1140,8 @@ packages:
     resolution: {integrity: sha512-h0AZ9A7IDVwwHyMxmdMXKy+9oNlF0zFoahHiX3vQ8e3KFcSP3VmsmfvtRSuLPxmyv2vjIDxqty8smTgie/SNRQ==}
     engines: {node: '>=20.19.0'}
 
-  mongodb@7.0.0:
-    resolution: {integrity: sha512-vG/A5cQrvGGvZm2mTnCSz1LUcbOPl83hfB6bxULKQ8oFZauyox/2xbZOoGNl+64m8VBrETkdGCDBdOsCr3F3jg==}
+  mongodb@7.2.0:
+    resolution: {integrity: sha512-F/2+BMZtLVhY30ioZp0dAmZ+IRZMBqI+nrv6t5+9/1AIwCa8sMRC3jBf81lpxMhnZgqq8CoUD503Z1oZWq1/sw==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.806.0
@@ -1167,8 +1167,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@9.0.2:
-    resolution: {integrity: sha512-+GCaqwE+X//yN9eo2M2L/n+mVti9J6vH5iQKbhD+2AArZd5iaZqK/DkmkE4S6/iYYMyVQPTXsRk7jyVOYEtJzA==}
+  mongoose@9.6.1:
+    resolution: {integrity: sha512-3T8/b0plM3ZJPW3WjlzVMIGJEYYTjgDPQ05Qzru3xu3/wOPSFKWYxdwUF2dl8h3NG5dVkzIuOkZdLacnlLf/sA==}
     engines: {node: '>=20.19.0'}
 
   mpath@0.9.0:
@@ -1892,11 +1892,11 @@ snapshots:
 
   '@tsconfig/strictest@2.0.8': {}
 
-  '@typegoose/typegoose@12.20.1(mongoose@9.0.2)':
+  '@typegoose/typegoose@12.21.1(mongoose@9.6.1)':
     dependencies:
       lodash: 4.18.1
       loglevel: 1.9.2
-      mongoose: 9.0.2
+      mongoose: 9.6.1
       reflect-metadata: 0.2.2
       semver: 7.7.4
       tslib: 2.8.1
@@ -2926,7 +2926,7 @@ snapshots:
       object.assign: 4.1.7
       object.values: 1.2.1
 
-  kareem@3.0.0: {}
+  kareem@3.3.0: {}
 
   keyv@4.5.4:
     dependencies:
@@ -3002,16 +3002,16 @@ snapshots:
       '@types/whatwg-url': 13.0.0
       whatwg-url: 14.2.0
 
-  mongodb@7.0.0:
+  mongodb@7.2.0:
     dependencies:
       '@mongodb-js/saslprep': 1.4.10
       bson: 7.2.0
       mongodb-connection-string-url: 7.0.1
 
-  mongoose@9.0.2:
+  mongoose@9.6.1:
     dependencies:
-      kareem: 3.0.0
-      mongodb: 7.0.0
+      kareem: 3.3.0
+      mongodb: 7.2.0
       mpath: 0.9.0
       mquery: 6.0.0
       ms: 2.1.3
