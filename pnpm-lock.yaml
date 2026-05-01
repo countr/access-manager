@@ -15,8 +15,8 @@ importers:
         specifier: 4.0.9
         version: 4.0.9
       discord.js:
-        specifier: 14.26.3
-        version: 14.26.3(bufferutil@4.0.9)
+        specifier: 14.26.4
+        version: 14.26.4(bufferutil@4.0.9)
       dotenv:
         specifier: 17.2.4
         version: 17.2.4
@@ -47,7 +47,7 @@ importers:
         version: 9.39.4(jiti@1.21.7)
       eslint-config-promise:
         specifier: github:promise/eslint-config
-        version: https://codeload.github.com/promise/eslint-config/tar.gz/45921d0e5d9bee222160e3358373e5d380f99153(09ab07e06f8be584ff9421196afc136d)
+        version: https://codeload.github.com/promise/eslint-config/tar.gz/e20e0c58b4ff93535e02154eb39b08fe7def4ae2(f0e3eb70f9c4822b32d092cbdb42b6bd)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -562,8 +562,8 @@ packages:
   discord-api-types@0.38.47:
     resolution: {integrity: sha512-XgXQodHQBAE6kfD7kMvVo30863iHX1LHSqNq6MGUTDwIFCCvHva13+rwxyxVXDqudyApMNAd32PGjgVETi5rjA==}
 
-  discord.js@14.26.3:
-    resolution: {integrity: sha512-XEKtYn28YFsiJ5l4fLRyikdbo6RD5oFyqfVHQlvXz2104JhH/E8slN28dbky05w3DCrJcNVWvhVvcJCTSl/KIg==}
+  discord.js@14.26.4:
+    resolution: {integrity: sha512-4oBp8tc6Kf8IDBwAHhbsMaAqx1b5fob9SNasZT7V6yyyUydoO5i5fGuX7TmvRtR+q/WgKRnRViRoAWnG7fNyvA==}
     engines: {node: '>=18'}
 
   dlv@1.1.3:
@@ -620,8 +620,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/45921d0e5d9bee222160e3358373e5d380f99153:
-    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/45921d0e5d9bee222160e3358373e5d380f99153}
+  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/e20e0c58b4ff93535e02154eb39b08fe7def4ae2:
+    resolution: {tarball: https://codeload.github.com/promise/eslint-config/tar.gz/e20e0c58b4ff93535e02154eb39b08fe7def4ae2}
     version: 0.0.0
     peerDependencies:
       '@stylistic/eslint-plugin-js': 4.2.0
@@ -635,7 +635,7 @@ packages:
       eslint-plugin-perfectionist: 4.12.3
       eslint-plugin-react: 7.37.5
       eslint-plugin-tailwindcss: 3.18.0
-      globals: 17.5.0
+      globals: 17.6.0
 
   eslint-import-resolver-node@0.3.10:
     resolution: {integrity: sha512-tRrKqFyCaKict5hOd244sL6EQFNycnMQnBe+j8uqGNXYzsImGbGUU4ibtoaBmv5FLwJwcFJNeg1GeVjQfbMrDQ==}
@@ -848,8 +848,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@17.5.0:
-    resolution: {integrity: sha512-qoV+HK2yFl/366t2/Cb3+xxPUo5BuMynomoDmiaZBIdbs+0pYbjfZU+twLhGKp4uCZ/+NbtpVepH5bGCxRyy2g==}
+  globals@17.6.0:
+    resolution: {integrity: sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -2300,7 +2300,7 @@ snapshots:
 
   discord-api-types@0.38.47: {}
 
-  discord.js@14.26.3(bufferutil@4.0.9):
+  discord.js@14.26.4(bufferutil@4.0.9):
     dependencies:
       '@discordjs/builders': 1.14.1
       '@discordjs/collection': 1.5.3
@@ -2438,7 +2438,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/45921d0e5d9bee222160e3358373e5d380f99153(09ab07e06f8be584ff9421196afc136d):
+  eslint-config-promise@https://codeload.github.com/promise/eslint-config/tar.gz/e20e0c58b4ff93535e02154eb39b08fe7def4ae2(f0e3eb70f9c4822b32d092cbdb42b6bd):
     dependencies:
       '@stylistic/eslint-plugin-js': 4.2.0(eslint@9.39.4(jiti@1.21.7))
       '@stylistic/eslint-plugin-jsx': 4.2.0(eslint@9.39.4(jiti@1.21.7))
@@ -2451,7 +2451,7 @@ snapshots:
       eslint-plugin-perfectionist: 4.12.3(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
       eslint-plugin-react: 7.37.5(eslint@9.39.4(jiti@1.21.7))
       eslint-plugin-tailwindcss: 3.18.0(tailwindcss@3.4.19)
-      globals: 17.5.0
+      globals: 17.6.0
 
   eslint-import-resolver-node@0.3.10:
     dependencies:
@@ -2724,7 +2724,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@17.5.0: {}
+  globals@17.6.0: {}
 
   globalthis@1.0.4:
     dependencies:
